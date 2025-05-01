@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -54,10 +53,11 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				portfolio: {
-					dark: '#121212',
-					accent: '#4a9eff',
-					text: '#e0e0e0',
-					muted: '#8a8a8a',
+					dark: '#1a291a',
+					accent: '#2C5F2D',
+					highlight: '#97BC62',
+					text: '#e8f1e8',
+					muted: '#729772',
 				}
 			},
 			borderRadius: {
@@ -95,7 +95,8 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out',
-				'fade-up': 'fade-up 0.5s ease-out'
+				'fade-up': 'fade-up 0.5s ease-out',
+				'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite'
 			}
 		}
 	},
