@@ -17,7 +17,7 @@ const Index = () => {
                       <div className="relative group cursor-pointer ml-2">
                         <div className="absolute -inset-2 bg-portfolio-accent/20 rounded-full blur-sm group-hover:blur-md transition-all opacity-0 group-hover:opacity-100"></div>
                         <img
-                          src="/portfolio/images/JS.png"
+                          src="/images/JS.png"
                           alt="Soup Logo"
                           className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 object-contain relative animate-pulse-slow group-hover:animate-none transition-transform group-hover:scale-110"
                         />
@@ -26,7 +26,7 @@ const Index = () => {
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-[800px] flex items-center justify-center bg-transparent border-none shadow-none">
                       <img
-                        src="/portfolio/images/JS.png"
+                        src="/images/JS.png"
                         alt="Large Soup Logo"
                         className="w-[500px] h-[500px] object-contain animate-fade-in"
                       />
@@ -39,7 +39,7 @@ const Index = () => {
               </h1>
             </div>
             <img
-              src="/portfolio/images/IMG_3956.jpeg"
+              src="/images/IMG_3956.jpeg"
               alt="Profile"
               className="w-40 h-40 md:w-44 md:h-44 rounded-full object-cover border border-portfolio-accent/50 shadow-lg shadow-portfolio-accent/10 transition-all hover:border-portfolio-accent/80 animate-fade-in [--animation-delay:400ms]"
             />
