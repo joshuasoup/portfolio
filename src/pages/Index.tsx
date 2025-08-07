@@ -133,7 +133,7 @@ const Index = () => {
             </DialogTrigger>
             <DialogContent className="max-w-4xl w-[90vw] h-[90vh] p-0">
               <iframe
-                src="/portfolio/Joshua Souphanthong Resume 2025 (1).pdf"
+                src="/portfolio/Joshua_Souphanthong_Resume_2025.pdf"
                 className="w-full h-full rounded-lg"
                 title="Resume PDF"
               />
