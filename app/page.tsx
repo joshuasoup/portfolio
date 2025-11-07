@@ -142,10 +142,10 @@ export default function Home() {
           <section aria-labelledby="about-heading" className="mb-8 md:mb-8">
             <p className="mt-3 text-sm md:text-base leading-6 md:leading-7 text-zinc-700">
               I'm a second-year computer science student who enjoys building
-              things that have a positive impact. I LOVE trying anything new,
-              whether it's food, sports, or places and I'm currently trying to
-              rock climb. If anyone wants to try something new with me, hit me
-              up!
+              things that have a positive impact. I love trying new things
+              whether it's food, sports, places, and I'm currently getting into
+              rock climbing! I'm always open to connecting so feel free to
+              reachout or connect with me!
             </p>
           </section>
 
