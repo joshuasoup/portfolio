@@ -193,21 +193,21 @@ export default function Home() {
             <div className="mt-4 space-y-4 md:space-y-6">
               <div className="rounded-lg border border-zinc-200 p-3 md:p-4">
                 <div className="flex flex-col md:flex-row md:items-baseline md:justify-between">
-                  <h3 className="text-base md:text-lg font-medium">
+                  <h3 className="text-sm md:text-base font-medium">
                     ClearHealth
                   </h3>
                 </div>
-                <p className="mt-2 text-sm md:text-base text-zinc-700">
+                <p className="mt-2 text-xs md:text-sm text-zinc-700">
                   Built a full-stack application for medical documents,
                   integrating a chatbot with OpenAI GPT API, storing vector
                   embeddings in PineconeDB, and establishing a secure file
                   upload system with AWS S3.
                 </p>
-                <p className="mt-2 text-sm md:text-base">
+                <p className="mt-2 text-xs md:text-sm">
                   <span className="font-medium">Tech:</span> JavaScript, React,
                   PineconeDB, Clerk, AWS S3
                 </p>
-                <p className="mt-2 text-sm md:text-base">
+                <p className="mt-2 text-xs md:text-sm">
                   <a
                     className="underline underline-offset-4 hover:text-zinc-700 dark:hover:text-zinc-200"
                     href="https://github.com/joshuasoup/Clear-Health"
@@ -221,21 +221,21 @@ export default function Home() {
 
               <div className="rounded-lg border border-zinc-200 p-3 md:p-4">
                 <div className="flex flex-col md:flex-row md:items-baseline md:justify-between">
-                  <h3 className="text-base md:text-lg font-medium">
+                  <h3 className="text-sm md:text-base font-medium">
                     CourseFlow
                   </h3>
                 </div>
-                <p className="mt-2 text-sm md:text-base text-zinc-700">
+                <p className="mt-2 text-xs md:text-sm text-zinc-700">
                   Developed a syllabus analyzer with Google's Gemini API,
                   streamlining calendar event creation, creating an Express
                   backend for AI-powered document parsing, and configuring
                   Supabase for user profiles.
                 </p>
-                <p className="mt-2 text-sm md:text-base">
+                <p className="mt-2 text-xs md:text-sm">
                   <span className="font-medium">Tech:</span> TypeScript, React,
                   Express, Supabase
                 </p>
-                <p className="mt-2 text-sm md:text-base">
+                <p className="mt-2 text-xs md:text-sm">
                   <a
                     className="underline underline-offset-4 hover:text-zinc-700 dark:hover:text-zinc-200"
                     href="https://github.com/joshuasoup"
