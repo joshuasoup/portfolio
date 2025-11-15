@@ -12,7 +12,14 @@ export default function Home() {
       sparkCount={8}
       duration={400}
     >
-      <div className="min-h-screen w-full bg-zinc-50 font-sans text-zinc-900">
+      <div
+        className="min-h-screen w-full bg-zinc-50 font-sans text-zinc-900"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle, rgba(0, 0, 0, 0.08) 1px, transparent 1px)",
+          backgroundSize: "24px 24px",
+        }}
+      >
         <StickerPeel
           imageSrc="/images/JS.png"
           width={150}
@@ -23,14 +30,14 @@ export default function Home() {
           lightingIntensity={0.09}
           className="hidden md:block top-10 right-10 z-50"
         />
-        <main className="mx-auto max-w-2xl px-4 md:px-6 py-8 md:py-16">
+        <main className="mx-auto max-w-3xl px-4 md:px-6 py-8 md:py-16">
           <header className="mb-8 md:mb-8">
             <div className="flex items-center gap-2 md:gap-3">
               <div className="flex-1 min-w-0 md:max-w-[calc(100%-220px)]">
-                <h1 className="text-2xl md:text-4xl font-bold tracking-tight">
+                <h1 className="text-2xl md:text-4xl font-bold tracking-tight fade-in">
                   Josh Souphanthong
                 </h1>
-                <div className="mt-2 flex flex-wrap items-center gap-2 text-sm md:text-base">
+                <div className="mt-2 flex flex-wrap items-center gap-2 text-sm md:text-base fade-in fade-in-delay-1">
                   <span>
                     Computer Science at{" "}
                     <a
@@ -49,7 +56,7 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="mt-4 flex flex-wrap items-center gap-3 text-sm">
+                <div className="mt-4 flex flex-wrap items-center gap-3 text-sm fade-in fade-in-delay-2">
                   <a
                     className="underline underline-offset-4 hover:text-zinc-700"
                     href="mailto:joshuasouphanthong@carleton.ca"
@@ -85,7 +92,7 @@ export default function Home() {
                   </a>
                 </div>
 
-                <div className="mt-6 md:mt-8">
+                <div className="mt-6 md:mt-8 fade-in fade-in-delay-3">
                   <p className="text-xs font-medium uppercase tracking-wide text-zinc-400">
                     Now
                   </p>
@@ -127,7 +134,7 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-              <div className="hidden md:flex shrink-0 items-center justify-center">
+              <div className="hidden md:flex shrink-0 items-center justify-center fade-in fade-in-delay-1">
                 <Image
                   src="/me.jpeg"
                   alt="Josh Souphanthong"
@@ -139,7 +146,10 @@ export default function Home() {
             </div>
           </header>
 
-          <section aria-labelledby="about-heading" className="mb-8 md:mb-8">
+          <section
+            aria-labelledby="about-heading"
+            className="mb-8 md:mb-8 fade-in fade-in-delay-4"
+          >
             <p className="mt-3 text-sm md:text-base leading-6 md:leading-7 text-zinc-700">
               I'm a second-year computer science student who enjoys building
               things that have a positive impact. I love trying new things
@@ -155,101 +165,125 @@ export default function Home() {
           >
             <h2
               id="experience-heading"
-              className="text-xl md:text-2xl font-semibold"
+              className="text-lg md:text-xl font-semibold fade-in fade-in-delay-5"
             >
-              Experience
+              Journey
             </h2>
-            <div className="mt-4 flex flex-col w-full gap-2 md:gap-2">
-              <ExperienceItem
-                name="Clover Labs"
-                logo="/images/companies/clover-labs/logo.png"
-                label="Software Engineer Intern"
-                link="https://cloverlabs.ai"
-                backgroundImage="/images/companies/clover-labs/bg.png"
-              />
-              <ExperienceItem
-                name="Laroye AI"
-                logo="/images/companies/laroye-ai/logo.png"
-                label="Software Engineer Intern"
-                link="https://laroye.ai"
-                backgroundImage="/images/companies/laroye-ai/bg.png"
-              />
-              <ExperienceItem
-                name="Social Coffee & Tea Co."
-                logo="/images/companies/social-coffee/logo.png"
-                label="Full-stack Developer"
-                link="https://socialcoffee.com"
-                backgroundImage="/images/companies/social-coffee/bg.png"
-              />
+            <p className="text-sm md:text-base text-zinc-600 fade-in fade-in-delay-5">
+              What I've learned and where I've been.
+            </p>
+            <div className="flex flex-col w-full gap-0 mt-2">
+              <div className="fade-in fade-in-delay-5">
+                <ExperienceItem
+                  name="Clover Labs"
+                  logo="/images/companies/clover-labs/logo.png"
+                  label="Software Engineer Intern"
+                  link="https://cloverlabs.ai"
+                  backgroundImage="/images/companies/clover-labs/bg.png"
+                />
+              </div>
+              <div className="fade-in fade-in-delay-6">
+                <ExperienceItem
+                  name="Laroye AI"
+                  logo="/images/companies/laroye-ai/logo.png"
+                  label="Software Engineer Intern"
+                  link="https://laroye.ai"
+                  backgroundImage="/images/companies/laroye-ai/bg.png"
+                />
+              </div>
+              <div className="fade-in fade-in-delay-7">
+                <ExperienceItem
+                  name="Social Coffee & Tea Co."
+                  logo="/images/companies/social-coffee/logo.png"
+                  label="Full-stack Developer"
+                  link="https://socialcoffee.com"
+                  backgroundImage="/images/companies/social-coffee/bg.png"
+                />
+              </div>
             </div>
           </section>
           <section aria-labelledby="projects-heading" className="mb-8 md:mb-8">
             <h2
               id="projects-heading"
-              className="text-xl md:text-2xl font-semibold"
+              className="text-lg md:text-xl font-semibold fade-in fade-in-delay-5"
             >
               Projects
             </h2>
-            <div className="mt-4 space-y-4 md:space-y-6">
-              <div className="rounded-lg border border-zinc-200 p-3 md:p-4">
-                <div className="flex flex-col md:flex-row md:items-baseline md:justify-between">
-                  <h3 className="text-sm md:text-base font-medium">
-                    ClearHealth
-                  </h3>
+            <p className="text-sm md:text-base text-zinc-600 fade-in fade-in-delay-5">
+              Things I've built
+            </p>
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+              <div className="fade-in fade-in-delay-6">
+                <a
+                  href="https://github.com/joshuasoup/Clear-Health"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block group"
+                >
+                  <div className="rounded-lg bg-zinc-900 text-white relative overflow-hidden aspect-video transition-transform duration-300 group-hover:scale-[1.03] cursor-pointer">
+                    <video
+                      className="w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                    >
+                      <source src="/videos/clearhealth.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/15 transition-colors duration-300"></div>
+                  </div>
+                </a>
+                <div className="mt-3">
+                  <div className="flex items-baseline justify-between mb-2">
+                    <h4 className="text-sm md:text-base font-semibold">
+                      ClearHealth
+                    </h4>
+                    <span className="text-xs text-zinc-500">2024</span>
+                  </div>
+                  <p className="text-xs md:text-sm text-zinc-600">
+                    An AI chatbot for families navigating medical reports. I
+                    built this after struggling to understand my grandma's
+                    cancer diagnosis.
+                  </p>
                 </div>
-                <p className="mt-2 text-xs md:text-sm text-zinc-700">
-                  Built a full-stack application for medical documents,
-                  integrating a chatbot with OpenAI GPT API, storing vector
-                  embeddings in PineconeDB, and establishing a secure file
-                  upload system with AWS S3.
-                </p>
-                <p className="mt-2 text-xs md:text-sm">
-                  <span className="font-medium">Tech:</span> JavaScript, React,
-                  PineconeDB, Clerk, AWS S3
-                </p>
-                <p className="mt-2 text-xs md:text-sm">
-                  <a
-                    className="underline underline-offset-4 hover:text-zinc-700 dark:hover:text-zinc-200"
-                    href="https://github.com/joshuasoup/Clear-Health"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    github.com/joshuasoup/Clear-Health
-                  </a>
-                </p>
               </div>
 
-              <div className="rounded-lg border border-zinc-200 p-3 md:p-4">
-                <div className="flex flex-col md:flex-row md:items-baseline md:justify-between">
-                  <h3 className="text-sm md:text-base font-medium">
-                    CourseFlow
-                  </h3>
+              <div className="fade-in fade-in-delay-7">
+                <a
+                  href="https://github.com/joshuasoup"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block group"
+                >
+                  <div className="rounded-lg bg-zinc-900 text-white relative overflow-hidden aspect-video transition-transform duration-300 group-hover:scale-[1.03] cursor-pointer">
+                    <Image
+                      src="/images/courseflow.png"
+                      alt="CourseFlow"
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/15 transition-colors duration-300"></div>
+                  </div>
+                </a>
+                <div className="mt-3">
+                  <div className="flex items-baseline justify-between mb-2">
+                    <h4 className="text-sm md:text-base font-semibold">
+                      CourseFlow
+                    </h4>
+                    <span className="text-xs text-zinc-500">2024</span>
+                  </div>
+                  <p className="text-xs md:text-sm text-zinc-600">
+                    Turns course syllabi into calendar events automatically.
+                    Parses deadlines and assignments because I kept missing
+                    them.
+                  </p>
                 </div>
-                <p className="mt-2 text-xs md:text-sm text-zinc-700">
-                  Developed a syllabus analyzer with Google's Gemini API,
-                  streamlining calendar event creation, creating an Express
-                  backend for AI-powered document parsing, and configuring
-                  Supabase for user profiles.
-                </p>
-                <p className="mt-2 text-xs md:text-sm">
-                  <span className="font-medium">Tech:</span> TypeScript, React,
-                  Express, Supabase
-                </p>
-                <p className="mt-2 text-xs md:text-sm">
-                  <a
-                    className="underline underline-offset-4 hover:text-zinc-700 dark:hover:text-zinc-200"
-                    href="https://github.com/joshuasoup"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    github.com/joshuasoup
-                  </a>
-                </p>
               </div>
             </div>
           </section>
 
-          <footer className="mt-8 md:mt-12 border-t border-zinc-200 pt-4 md:pt-6 text-xs md:text-sm text-zinc-600">
+          <footer className="mt-8 md:mt-12 border-t border-zinc-200 pt-4 md:pt-6 text-xs md:text-sm text-zinc-600 fade-in fade-in-delay-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <p>© 2025 Joshua Souphanthong</p>
               <div className="flex items-center gap-3 md:gap-4 text-zinc-600">
@@ -257,7 +291,7 @@ export default function Home() {
                   href="mailto:joshuasouphanthong@carleton.ca"
                   aria-label="Email"
                   title="Email"
-                  className="hover:text-zinc-800"
+                  className="hover:text-zinc-800 transition-transform hover:scale-110"
                 >
                   <svg
                     width="20"
@@ -288,7 +322,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   aria-label="GitHub"
                   title="GitHub"
-                  className="hover:text-zinc-800"
+                  className="hover:text-zinc-800 transition-transform hover:scale-110"
                 >
                   <svg
                     width="20"
@@ -312,7 +346,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
                   title="LinkedIn"
-                  className="hover:text-zinc-800"
+                  className="hover:text-zinc-800 transition-transform hover:scale-110"
                 >
                   <svg
                     width="20"
@@ -362,7 +396,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   aria-label="CV"
                   title="CV"
-                  className="hover:text-zinc-800"
+                  className="hover:text-zinc-800 transition-transform hover:scale-110"
                 >
                   <svg
                     width="20"

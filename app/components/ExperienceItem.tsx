@@ -38,8 +38,8 @@ export function ExperienceItem({
           <Image
             src={logo}
             alt={`${name} logo`}
-            width={64}
-            height={64}
+            width={56}
+            height={56}
             className="h-full w-full object-contain rounded-[8px]"
           />
         </div>
